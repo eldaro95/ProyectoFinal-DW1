@@ -1,0 +1,93 @@
+/*Selector Universal*/
+* {
+    margin: 0;
+    /*Elimina el margen por defecto de todos los elementos html*/
+    padding: 0;
+    /*Elimina márgenes internos de cada componente*/
+    /*Definimos el modelo de cajas para navegadores basados en webkit, 
+    googleChrome, internet explorer, edge*/
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados 
+    en mozilla, firefox*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados 
+    en el estandar CSS3*/
+    box-sizing: border-box;
+}
+
+/*Diseño cuerpo página*/
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: white;
+    background-color: #1E1E2F;
+}
+
+/*Contenedor header*/
+header .contenedor {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Contenedor interno izq logo*/
+header .logo {
+    width: 20%;
+    height: 140px;
+    float: left;
+    background-color: rgba(100, 41, 155, 0.4);
+}
+
+/*Contenedor interno derecha menu*/
+header .menu {
+    width: 80%;
+    height: 140px;
+    float: right;
+    text-align: center;
+    background-color: rgba(100, 41, 155, 0.4);
+}
+
+/*Diseño contenido menú*/
+header .menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 200;
+    margin: 120px 70px;
+}
+
+/*Diseño interactivo menú*/
+header .menu a:hover {
+    text-decoration: underline;
+    color: white;
+    /*CENTRAR CONTENIDO-----FALTA*/
+}
+
+/*Contenedor interno Título y subtítulo*/
+header .encabezado {
+    width: 100%;
+}
+
+/*Diseño contenido título*/
+header .titulo {
+    font-size: 90px;
+    margin: 20px;
+    padding-left: 200px;
+}
+
+/*Diseño contenido subtítulo*/
+header .subtitulo {
+    font-size: 80px;
+    margin: 20px;
+    padding-left: 200px;
+}
+/*
+.main .contenedor {
+    overflow: hidden;
+}
+
+
+.main .contenedor1 .foto {
+floa
+}*/
+
+

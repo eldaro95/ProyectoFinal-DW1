@@ -9,8 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: white;
-    background-color: #1E1E2F;
+    color: #011126;
+    background-color: #94cef2;
     line-height: 1.5;
 }
 
@@ -27,7 +27,7 @@ header .contenedor {
 header .logo {
     flex: 1 1 20%;
     height: 140px;
-    background-color: rgba(100, 41, 155, 0.4);
+    background-color:#f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ header .logo {
 header .menu {
     flex: 1 1 80%;
     height: 140px;
-    background-color: rgba(100, 41, 155, 0.4);
+    background-color:#f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +48,14 @@ header .menu {
 header .menu a {
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: #011126;
     margin: 10px 20px;
     transition: color 0.3s;
 }
 
 /* Efecto al pasar el cursor por los enlaces del menú */
 header .menu a:hover {
-    color: rgb(0, 255, 238);
+    color: #e91e63;
 }
 
 /* Encabezado con título y subtítulo */
@@ -69,21 +69,21 @@ header .encabezado {
 .titulo {
     font-size: 70px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #011126;;
 }
 
 /* Subtítulo */
 .subtitulo {
     font-size: 24px;
     font-style: italic;
-    color: #ccc;
+    color: #011126;
 }
 
 /* Título de sección */
 .seccion-titulo {
     text-align: center;
     margin: 40px 0 20px;
-    color: #fff;
+    color: #011126;
 }
 
 /* Contenedor de productos */
@@ -98,7 +98,7 @@ header .encabezado {
 /* Tarjetas de producto */
 .producto {
     background-color: #fff;
-    color: #333;
+    color: #011126;
     border-radius: 10px;
     padding: 20px;
     width: 280px;

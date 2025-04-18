@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="../styles/estilos_catalogo.css">
+    <title>Catálogo | Blue Zone</title>
 </head>
 <body>
-    
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Contenedor principal del encabezado -->
+        <div class="contenedor">
+            <!-- Contenedor del logo -->
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="logo" width="140" height="140">
+            </div>
+            <!-- Contenedor del menú de navegación -->
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Noche Blue</a>
+                <a href="#">Catálogo</a>
+                <a href="#">Servicio Técnico</a>
+            </nav>
+        </div>
+
+        <!-- Encabezado con título y subtítulo -->
+        <div class="contenedor encabezado">
+            <h1 class="titulo">Blue Zone</h1>
+            <h3 class="subtitulo">Game Products Station</h3>
+        </div>
+    </header>
+
+    <!-- Título de sección -->
+    <h1 class="seccion-titulo">Catálogo de Productos</h1>
+
+    <!-- Contenedor de productos -->
+    <div class="catalogo">
+        <!-- Producto individual -->
+        <div class="producto">
+            <img src="../img/mouse-gamer.png" alt="Mouse Gamer RGB">
+            <h3>Mouse Gamer RGB</h3>
+            <p>Mouse ergonómico con 7 botones programables y retroiluminación RGB personalizable.</p>
+            <p class="precio">$29.99</p>
+            <button class="btn-agregar" onclick="#">Comprar</button>
+
+        </div>
+
+        <!-- Otro producto -->
+        <div class="producto">
+            <img src="../img/teclado-mecanico.jpg" alt="Teclado Mecánico">
+            <h3>Teclado Mecánico Retroiluminado</h3>
+            <p>Switches azules, diseño anti-ghosting, y luz LED para sesiones nocturnas.</p>
+            <p class="precio">$79.99</p>
+            <button class="btn-agregar" onclick="#">Comprar</button>
+
+        </div>
+
+        <div class="producto">
+            <img src="../img/auriculares-gaming.jpg" alt="Auriculares Gaming">
+            <h3>Auriculares Gaming Surround</h3>
+            <p>Sonido envolvente 7.1, micrófono con cancelación de ruido y almohadillas cómodas.</p>
+            <p class="precio">$49.99</p>
+            <button class="btn-agregar" onclick="#">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="../img/monitor-gamer.png" alt="Monitor Gamer">
+            <h3>Monitor Gamer 24" 144Hz</h3>
+            <p>Resolución Full HD, 1ms de respuesta y tecnología FreeSync para fluidez total.</p>
+            <p class="precio">$899.99</p>
+            <button class="btn-agregar" onclick="#">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="../img/silla-gamer.jpg" alt="Silla Gaming">
+            <h3>Silla Gaming Ergonómica</h3>
+            <p>Diseño tipo racing, soporte lumbar ajustable y reclinación hasta 160°.</p>
+            <p class="precio">$149.99</p>
+            <button class="btn-agregar" onclick="#">Comprar</button>
+        </div>
+    </div>
 </body>
 </html>

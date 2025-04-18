@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlace a hoja de estilos externa -->
     <link rel="stylesheet" href="../styles/estilos_catalogo.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <title>Catálogo | Blue Zone</title>
 </head>
 <body>
@@ -37,49 +38,61 @@
 
     <!-- Contenedor de productos -->
     <div class="catalogo">
-        <!-- Producto individual -->
+        <!-- Producto 1 -->
         <div class="producto">
             <img src="../img/mouse-gamer.png" alt="Mouse Gamer RGB">
             <h3>Mouse Gamer RGB</h3>
             <p>Mouse ergonómico con 7 botones programables y retroiluminación RGB personalizable.</p>
             <p class="precio">$29.99</p>
-            <button class="btn-agregar" onclick="">Comprar</button>
-
+            <button class="generarBtn">Generar Número de Orden</button>
+            <div class="numeroOrden"></div>
         </div>
 
-        <!-- Otro producto -->
+        <!-- Producto 2 -->
         <div class="producto">
             <img src="../img/teclado-mecanico.jpg" alt="Teclado Mecánico">
             <h3>Teclado Mecánico Retroiluminado</h3>
             <p>Switches azules, diseño anti-ghosting, y luz LED para sesiones nocturnas.</p>
             <p class="precio">$79.99</p>
-            <button class="btn-agregar" onclick="">Comprar</button>
-
+            <button class="generarBtn">Generar Número de Orden</button>
+            <div class="numeroOrden"></div>
+            <!--<script src="../js/script.js"></script>--> 
         </div>
 
+        <!-- Producto 3 -->
         <div class="producto">
             <img src="../img/auriculares-gaming.jpg" alt="Auriculares Gaming">
             <h3>Auriculares Gaming Surround</h3>
             <p>Sonido envolvente 7.1, micrófono con cancelación de ruido y almohadillas cómodas.</p>
             <p class="precio">$49.99</p>
-            <button class="btn-agregar" onclick="">Comprar</button>
+            <button class="generarBtn">Generar Número de Orden</button>
+            <div class="numeroOrden"></div>
+            <!--<script src="../js/script.js"></script>-->
         </div>
 
+        <!-- Producto 4 -->
         <div class="producto">
             <img src="../img/monitor-gamer.png" alt="Monitor Gamer">
             <h3>Monitor Gamer 24" 144Hz</h3>
             <p>Resolución Full HD, 1ms de respuesta y tecnología FreeSync para fluidez total.</p>
             <p class="precio">$899.99</p>
-            <button class="btn-agregar" onclick="">Comprar</button>
+            <button class="generarBtn">Generar Número de Orden</button>
+            <div class="numeroOrden"></div>
+            <!--<script src="../js/script.js"></script>-->
         </div>
 
+        <!-- Producto 5 -->
         <div class="producto">
             <img src="../img/silla-gamer.jpg" alt="Silla Gaming">
             <h3>Silla Gaming Ergonómica</h3>
             <p>Diseño tipo racing, soporte lumbar ajustable y reclinación hasta 160°.</p>
             <p class="precio">$149.99</p>
-            <button class="btn-agregar" onclick="">Comprar</button>
+            <button class="generarBtn">Generar Número de Orden</button>
+            <div class="numeroOrden"></div>
+            <script src="../js/script.js"></script> 
         </div>
     </div>
+
+
 </body>
 </html>

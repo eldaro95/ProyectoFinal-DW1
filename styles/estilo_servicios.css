@@ -1,0 +1,169 @@
+/* Selector universal para reiniciar estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y border no agranden el elemento */
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #B6E1F2;
+  line-height: 1.5;  /* Espaciado entre líneas */
+}
+
+/* Encabezado de bienvenida */
+header .bienvenida {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Contenedor general del encabezado */
+header .contenedor {
+  width: auto;
+  overflow: hidden; /* Evita que el contenido se desborde */
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  background-image: url('../img/fondo_nav.jpg'); /* Imagen de fondo */
+  border-radius: 15px ;
+  margin: 10px 10px 10px 10px;
+  border: 1px solid black;
+}
+
+/* Contenedor del logo */
+header .logo {
+  flex: 1 1 20%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menú de navegación */
+header .menu {
+  flex: 1 1 80%;
+  height: 140px;
+  /*background-color:#f2f2f2;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Enlaces del menú */
+header .menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #011126;
+  margin: 10px 20px;
+  transition: color 0.3s;
+  background-color:#0077cc;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Efecto al pasar el cursor por los enlaces del menú */
+header .menu a:hover {
+  color: #B6E1F2;
+  background-color: #0D0D0D;
+}
+
+/* Encabezado con título y subtítulo */
+header .titulo_header {
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #011126;;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 24px;
+  font-style: italic;
+  color: #011126;
+}
+  main {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cita-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cita-form label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .cita-form input,
+  .cita-form select,
+  .cita-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .cita-form button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cita-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eaeaea;
+    margin-top: 2rem;
+  }
+  #map {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  textarea {
+    resize: none;
+  }
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    .subtitulo {
+        font-size: 18px;
+        text-align: center;
+    }
+    header .contenedor {
+        flex-direction: column;
+    }
+    header .logo,
+    header .menu {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,336 @@
+/*Selector Universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no agranden el elemento */
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #011126;
+    background-color: #94cef2;
+    line-height: 1.5;
+}
+
+/* Contenedor general del encabezado */
+header .contenedor {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Contenedor del logo */
+header .logo {
+    flex: 1 1 20%;
+    height: 140px;
+    background-color:#f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menú de navegación */
+header .menu {
+    flex: 1 1 80%;
+    height: 140px;
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Enlaces del menú */
+header .menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #011126;
+    margin: 10px 20px;
+    transition: color 0.3s;
+}
+
+/*Diseño interactivo menú*/
+header .menu a:hover {
+    color: #e91e63;
+    align-items: center;
+    /*CENTRAR CONTENIDO-----FALTA*/
+}
+
+/*Contenedor interno Título y subtítulo*/
+header .contenedor .encabezado {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Diseño contenido título*/
+header .titulo {
+    font-size: 70px;
+    color: #011126;
+    padding: 5px;
+}
+
+/*Diseño contenido subtítulo*/
+header .subtitulo {
+    font-size: 24px;
+    color: #011126;
+    padding: 5px;
+}
+
+.main .contenedor1 {
+    width: auto;
+    margin: 15px;
+    overflow-x: hidden;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.main .foto {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.main .foto img {
+    border-radius: 10px;
+}
+
+.main .contenedor2 {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    margin-top: 50px; 
+    align-items: center;
+}
+
+.main .noche img {
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.main .reserva {
+    background-color: #011126;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.main .reserva .texto2 {
+    background-color: #011126;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main .reserva h3 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Diseño contenido subtítulo*/
+.main .reserva p {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/*Contenedor externo 3 ubicacion*/
+.main .contenedor3 {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 15px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+/*Contenedores direccion y horarios*/
+.main .ubicacion{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Título ubicación*/
+.main .contenedor3 .titulo {
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+}
+
+.contenedor3 .h3-blancos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Cuadro blanco dirección*/
+.contenedor3 .ubicacion .direccion {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width: 100%;
+}
+
+/*Contenido cuadro ubicación*/
+.contenedor3 .ubicacion p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+/*Cuadro blanco horarios*/
+.contenedor3 .ubicacion .horarios {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width: 100%;
+}
+/*Contenido cuadro horarios*/
+.contenedor3 .horarios p {
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+/*mapa*/
+.main .mapa iframe {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 15px;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+footer .contenedor {
+    justify-items: center;
+}
+
+/*Contenido footer*/
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Media Query para pantallas hasta 800px */
+@media screen and (max-width: 800px) {
+    header .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .menu a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    header .logo {
+        height: 100px;
+    }
+
+    header .titulo {
+        font-size: 50px;
+    }
+
+    header .subtitulo {
+        font-size: 18px;
+    }
+
+    .main .foto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .contenedor2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .reserva {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .main .noche img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .main .contenedor3 .titulo {
+        width: 100%;
+    }
+
+    .contenedor3 .ubicacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor3 .ubicacion .direccion,
+    .contenedor3 .ubicacion .horarios {
+        width: 90%;
+    }
+
+    .main .mapa iframe {
+        max-height: 250px;
+    }
+}
+
+/* Media Query para pantallas hasta 400px */
+@media screen and (max-width: 400px) {
+    header .titulo {
+        font-size: 36px;
+    }
+
+    header .subtitulo {
+        font-size: 16px;
+    }
+
+    header .menu a {
+        font-size: 14px;
+    }
+
+    .main .reserva h3 {
+        font-size: 22px;
+    }
+
+    .main .reserva p {
+        font-size: 14px;
+    }
+
+    .contenedor3 .ubicacion p {
+        font-size: 13px;
+    }
+
+    .contenedor3 h3{
+        font-size: 12px;
+    }
+
+    .contenedor3 .ubicacion .direccion,
+    .contenedor3 .ubicacion .horarios {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .main .mapa iframe {
+        max-height: 250px;
+    }
+}
+
+

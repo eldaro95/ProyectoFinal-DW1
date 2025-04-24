@@ -11,7 +11,7 @@
 <!-- Encabezado de la página -->
 <header>
   <div class="bienvenida">
-    <p>Dirección: Calle 24 de Mayo y 9 de Octubre</p>
+    <p>Dirección: Av. Galo Plaza Lasso y Jaime Roldós</p>
     <p>Horario: Lunes a Viernes de 09:00 a 18:00</p>
   </div>
   <!-- Contenedor principal del encabezado -->
@@ -31,15 +31,20 @@
 
   <!-- Encabezado con título y subtítulo -->
   <div class="titulo_header">
-      <h1 class="titulo">Blue Zone</h1>
-      <h2 class="subtitulo">Servicio técnico</h2>
+      <h1 class="titulo">Agendamiento de Servicio Técnico</h1>
+      <h2 class="subtitulo">Con la garantía de Blue Zone</h2>
   </div>
 </header>
 
 
   <main>
-    <form class="cita-form">
+    <div class="formulario-imagen">
+      <img src="../img/tecnico.jpg" alt="Técnico reparando computadora">
+    </div>
+
+    <form class="cita-formulario">
       <label for="producto">Tipo de dispositivo:</label>
+
       <select id="producto" name="producto">
         <option value="">-- Selecciona --</option>
         <option value="laptop">Laptop</option>
@@ -56,8 +61,11 @@
       <label for="hora">Hora preferida:</label>
       <input type="time" id="hora" name="hora" />
 
-      <label for="direccion">Dirección aproximada (opcional):</label>
-      <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle Falsa 123, Ciudad" />
+      <label for="direccion_manual">Dirección exacta:</label>
+      <input type="text" id="direccion_manual" name="direccion_manual" placeholder="Ej: Av. Rio Amazonas N3O" />
+
+      <label for="direccion">Ubicación en mapa (opcional):</label>
+      <input type="text" id="direccion" name="direccion"/>
 
       <label>Selecciona tu ubicación en el mapa:</label>
       <div id="map"></div>
@@ -69,7 +77,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Servicio Técnico Express</p>
+    <p>&COPY; Todos los derechos reservados Grp1 2025-2030</p>
   </footer>
   <script src="../scripts/servicios.js"></script>
 

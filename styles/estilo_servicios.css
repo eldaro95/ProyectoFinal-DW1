@@ -14,18 +14,20 @@ body {
 
 /* Encabezado de bienvenida */
 header .bienvenida {
-  flex-direction: column;
   text-align: center;
+  padding: 10px;
+  background-color: #011126;
+  color: white;
 }
 
 /* Contenedor general del encabezado */
 header .contenedor {
-  width: auto;
-  overflow: hidden; /* Evita que el contenido se desborde */
   display: flex; /* Utiliza flexbox para alinear los elementos */
   flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
   align-items: center; /* Alinea verticalmente los elementos al centro */
-  background-image: url('../img/fondo_nav.jpg'); /* Imagen de fondo */
+  background-image: url('../img/nav.png'); /* Imagen de fondo */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija la imagen al fondo */
   border-radius: 15px ;
   margin: 10px 10px 10px 10px;
   border: 1px solid black;
@@ -44,7 +46,6 @@ header .logo {
 header .menu {
   flex: 1 1 80%;
   height: 140px;
-  /*background-color:#f2f2f2;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +58,6 @@ header .menu a {
   font-size: 18px;
   color: #011126;
   margin: 10px 20px;
-  transition: color 0.3s;
   background-color:#0077cc;
   padding: 10px 20px;
   border-radius: 5px;
@@ -78,7 +78,7 @@ header .titulo_header {
 
 /* Título principal */
 .titulo {
-  font-size: 70px;
+  font-size: 40px;
   margin-bottom: 10px;
   color: #011126;;
 }
@@ -89,73 +89,95 @@ header .titulo_header {
   font-style: italic;
   color: #011126;
 }
-  main {
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
+
+/*Estilos para la sección main*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px 25px 0px 25px;
+  }
+
+.formulario-imagen {
+    flex: 0 0 50%; /* No crece, no encoge, base 40% */
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.formulario-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen manteniendo relación de aspecto */
+  display: block;
+}
+.cita-formulario {
+    flex: 0 0 50%; /* No crece, no encoge, base 60% */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    padding: 40px; 
+  }
+
+.cita-formulario label {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-weight: bold;
   }
   
-  .cita-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cita-form label {
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-  }
-  
-  .cita-form input,
-  .cita-form select,
-  .cita-form textarea {
-    padding: 0.5rem;
+.cita-formulario input,
+.cita-formulario select,
+.cita-formulario textarea {
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 15px;
   }
   
-  .cita-form button {
-    margin-top: 1.5rem;
-    padding: 0.75rem;
+.cita-formulario button {
+    margin-top: 25px;
+    padding: 10px;
     background-color: #0077cc;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 25px;
     cursor: pointer;
-  }
+}
   
-  .cita-form button:hover {
+.cita-formulario button:hover {
     background-color: #005fa3;
   }
   
-  footer {
+footer {
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
     background: #eaeaea;
-    margin-top: 2rem;
+    margin-top: 20px;
   }
-  #map {
+#map {
     width: 100%;
-    height: 300px;
-    margin-top: 1rem;
+    height: 400px;
+    margin-top: 10px;
     border-radius: 10px;
   }
-  textarea {
+textarea {
     resize: none;
-  }
+}
 
 /* Responsive para pantallas pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .titulo {
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
     }
     .subtitulo {
-        font-size: 18px;
+        font-size: 15px;
         text-align: center;
     }
     header .contenedor {
@@ -166,4 +188,21 @@ header .titulo_header {
         flex: 1 1 100%;
         justify-content: center;
     }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 25px;
+      align-items: center;
+      justify-content: center;
+      }
+      .formulario-imagen {
+        justify-content: center;
+        align-items: center;
+      }
+    .cita-formulario {
+      width: 100%; /* Ocupará todo el ancho disponible */
+      max-width: 600px; /* Opcional: límite máximo de ancho */
+      margin: 0 auto; /* Centrar el formulario si no ocupa el 100% */
+      }
 }

@@ -1,35 +1,41 @@
+// Esperamos a que el contenido del DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
-    // Enlaces del menú
-    const menuItems = {
-        home: document.getElementById('home'),
-        evento: document.getElementById('evento'),
-        catalogo: document.getElementById('catalogo'),
-        servicio: document.getElementById('servicio-tecnico')
-    };
 
-    // Escuchadores para hacer scroll o mostrar alertas si no hay destino específico aún
-    menuItems.home.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+    // Obtenemos los elementos del menú por su ID para poder trabajar con ellos
+    const menuItems = {
+        home: document.getElementById('home'), // Enlace que lleva al inicio
+        evento: document.getElementById('evento'), // Enlace que lleva a la sección de eventos
+        catalogo: document.getElementById('catalogo'), // Enlace que lleva al catálogo
+        servicio: document.getElementById('servicio-tecnico') // Enlace al servicio técnico
+    };
 
-    menuItems.evento.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('.contenedor2')?.scrollIntoView({ behavior: 'smooth' });
-    });
+    // Cuando el usuario hace clic en "Inicio", se hace scroll hacia arriba (al principio de la página)
+    menuItems.home.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que el enlace se comporte como un link normal
+        window.scrollTo({
+            top: 0, // Va al tope de la página
+            behavior: 'smooth' // El desplazamiento se hace suavemente
+        });
+    });
 
-    menuItems.catalogo.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('.contenedor1')?.scrollIntoView({ behavior: 'smooth' });
-    });
+    // Al hacer clic en "Evento", se hace scroll hacia la sección que tiene la clase 'contenedor2'
+    menuItems.evento.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.contenedor2')?.scrollIntoView({ behavior: 'smooth' }); // Va a la sección suavemente
+    });
 
-    menuItems.servicio.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('.contenedor1')?.scrollIntoView({ behavior: 'smooth' });
-    });
+    // Cuando se da clic en "Catálogo", se hace scroll a la sección con clase 'contenedor1'
+    menuItems.catalogo.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.contenedor1')?.scrollIntoView({ behavior: 'smooth' });
+    });
 
-    // También puedes agregar funciones dinámicas más adelante si hay un backend
+    // Lo mismo pasa con "Servicio Técnico", también lo lleva a 'contenedor1' (aunque podría cambiarse si hay otra sección)
+    menuItems.servicio.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.contenedor1')?.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Nota: el signo de interrogación (?.) es por si el elemento no existe, así evita errores
+    // Más adelante se pueden agregar funciones más complejas si se conecta con un backend
 });

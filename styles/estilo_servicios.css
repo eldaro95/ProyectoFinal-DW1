@@ -8,7 +8,7 @@
 /* Estilo general del cuerpo */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #B6E1F2;
+  background-color: #B6E1F2; /* Color de fondo */
   line-height: 1.5;  /* Espaciado entre líneas */
 }
 
@@ -28,33 +28,33 @@ header .contenedor {
   background-image: url('../img/nav.png'); /* Imagen de fondo */
   background-position: center; /* Centra la imagen */
   background-attachment: fixed; /* Fija la imagen al fondo */
-  border-radius: 15px ;
-  margin: 10px 10px 10px 10px;
-  border: 1px solid black;
+  border-radius: 15px ; /* Bordes redondeados */
+  margin: 10px 10px 10px 10px; /* Margen alrededor del contenedor */
+  border: 1px solid black; /*Borde negro*/
 }
 
 /* Contenedor del logo */
 header .logo {
-  flex: 1 1 20%;
-  height: 140px;
-  display: flex;
-  justify-content: center;
+  flex: 1 1 20%; /* Ocupa el 20% del ancho del contenedor*/
+  height: 140px; 
+  display: flex;  /* Uso de distribucion flex*/
+  justify-content: center; 
   align-items: center;
 }
 
 /* Menú de navegación */
 header .menu {
-  flex: 1 1 80%;
-  height: 140px;
-  display: flex;
-  justify-content: center;
+  flex: 1 1 80%;  /* Ocupa el 80% del ancho del contenedor*/
+  height: 140px; 
+  display: flex;  
+  justify-content: center; 
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 /* Enlaces del menú */
 header .menu a {
-  text-decoration: none;
+  text-decoration: none; 
   font-size: 18px;
   color: #011126;
   margin: 10px 20px;
@@ -162,7 +162,7 @@ footer {
   }
 #map {
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin-top: 10px;
     border-radius: 10px;
   }

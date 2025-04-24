@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML con idioma español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProyectoFinal-DW1/styles/estilo-inicio.css"> <!--Enlace a CSS-->
+    <link rel="shortcut icon" href="../ProyectoFinal-DW1/img/logo.png" type="image/x-icon" href="img/icono.jpg">
+    <title>Cyber Blue Zone</title>
+</head>
+
+<body>
+    <!--Inicio header-->
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="../ProyectoFinal-DW1/img/logo.png" alt="logo" width="140px" height="140px">
+            </div>
+            <nav class="menu">
+                <a href="../index.html" id="home">Home</a>
+                <a href="../ProyectoFinal-DW1/paginas/evento.html" id="evento">Noche Blue</a>
+                <a href="../ProyectoFinal-DW1/paginas/catalogo.html" id="catalogo">Catálogo</a>
+                <a href="../ProyectoFinal-DW1/paginas/servicios.html" id="servicio-tecnico">Servicio Técnico</a>
+            </nav>
+
+
+        </div> <!-- Cierre del contenedor principal del header -->
+
+        <div class="contenedor encabezado"> <!-- Contenedor del título principal y llamada a la acción -->
+            <h1 class="titulo">Blue Zone</h1> <!-- Título principal del evento -->
+            <h2 class="subtitulo">Noche Blue</h2> <!-- Subtítulo del evento -->
+            <a href="#reserva" class="btn-reservar">¡Reservá tu lugar!</a> <!-- Botón que lleva al formulario de reserva -->
+        </div> <!-- Cierre del contenedor del encabezado -->
+
+    </header> <!-- Cierre del encabezado visual -->
+
+    <section class="main"> <!-- Sección principal del contenido -->
+        <section class="entrada"> <!-- Sección de introducción al evento -->
+            <div class="contenedor entrada-contenido"> <!-- Contenedor de contenido principal de entrada -->
+
+                <div class="img_entrada"> <!-- Imagen promocional del precio de entrada -->
+                    <img src="../img/entrada.png" alt="Precio entrada">
+                </div> <!-- Cierre de imagen entrada -->
+
+                <div class="img_boy_gamer"> <!-- Imagen decorativa de gamer chico -->
+                    <img src="../img/boy_gamer.png" alt="logo-boy" width="140" height="140">
+                </div> <!-- Cierre de imagen boy gamer -->
+
+                <div class="img_pc_gamer"> <!-- Imagen decorativa del logo gamer -->
+                    <img src="../img/logo_gamer.png" alt="Logogamer" width="140" height="140">
+                </div> <!-- Cierre de imagen PC gamer -->
+
+                <article class="evento-articulo"> <!-- Artículo con la descripción del evento -->
+                    <h3>🎮 ¡Noche Blue! 🌙</h3>
+                    <p> ¿Te gustan las partidas intensas, el sonido de a tope y
+                        las risas con amigos hasta el amanecer? <br>
+                        Entonces este es tu lugar donde los verdaderos gamers viven la noche al máximo.</p>
+
+                    <h3>🔥 Disfrutá nuestra promoción exclusiva: Noche Blue 🔥</h3>
+                    <p>El primer sabado de cada mes, por solo $ 4,00 tienes acceso a toda la noche de
+                        juego con tus títulos favoritos. Desde shooters frenéticos, batallas épicas en MOBAs,
+                        aventuras en mundos abiertos o clásicos de siempre.</p>
+
+                    <h3>🧍‍♂️ Juegá solo o con tu squad 🧑‍🤝‍🧑</h3>
+                    <p>Trae tu grupo o ven solo, en Blue Zone siempre hay alguien listo para
+                        sumarse a la partida.</p>
+
+                    <h3>💻 Equipamiento pro para gamers pro 🕹️</h3>
+                    <p>Contamos con PCs potentes, sillas ultra cómodas, conexión de alta
+                        velocidad y todo lo necesario para que juegues sin límites.</p>
+
+                    <h3>🍕 Snacks, bebidas y buena vibra 🥤</h3>
+                    <p>Además de jugar, pudés recargar energías con snacks y bebidas
+                        mientras disfrutás del mejor ambiente gamer.</p>
+                </article> <!-- Cierre del artículo descriptivo del evento -->
+
+            </div> <!-- Cierre del contenedor entrada-contenido -->
+        </section> <!-- Cierre de la sección entrada -->
+    </section> <!-- Cierre de la sección principal -->
+
+    <div class="iniciojuegos"> <!-- Sección de introducción a los juegos disponibles -->
+        <h3 class="textojuegos">🚀 Títulos "ricolinos" disponibles para que no te aburras con un solo juego. 🚀</h3>
+        <br>
+        <hr>
+    </div> <!-- Cierre de sección de títulos de juegos -->
+
+    <section class="galeria" id="galeria"> <!-- Galería de imágenes de los juegos -->
+        <div class="foto"><img src="../img/juego1.jpg" alt="Logo Dota2"></div>
+        <div class="foto"><img src="../img/juego2.jpg" alt="Logo Fornite"></div>
+        <div class="foto"><img src="../img/juego3.jpg" alt="Logo LeagueofLeguends"></div>
+        <div class="foto"><img src="../img/juego4.jpg" alt="Logo CounterStrike2"></div>
+        <div class="foto"><img src="../img/juego5.jpg" alt="Logo Pubg"></div>
+        <div class="foto"><img src="../img/juego6.jpg" alt="Logo Valorant"></div>
+        <div class="foto"><img src="../img/juego7.jpg" alt="Logo CallofDuty"></div>
+        <div class="foto"><img src="../img/juego8.jpg" alt="Logo FreeFire"></div>
+        <div class="foto"><img src="../img/juego9.png" alt="Logo Roblox"></div>
+        <div class="foto"><img src="../img/juego10.jpg" alt="Logo Minecraft"></div>
+    </section> <!-- Cierre de la galería de juegos -->
+
+    <section id="reserva" class="reserva-seccion"> <!-- Sección del formulario de reserva -->
+        <div class="contenedor-reserva"> <!-- Contenedor del formulario -->
+            <h2>Formulario de Reserva</h2>
+            <form id="form-reserva"> <!-- Inicio del formulario -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="text" id="correo" name="correo">
+
+                <label for="pc">Selecciona tu PC:</label>
+                <select id="pc" name="pc">
+                    <option value="">-- Selecciona una computadora --</option>
+                    <option value="PC 1">PC 1</option>
+                    <option value="PC 2">PC 2</option>
+                    <option value="PC 3">PC 3</option>
+                    <option value="PC 4">PC 4</option>
+                    <option value="PC 5">PC 5</option>
+                    <option value="PC 6">PC 6</option>
+                    <option value="PC 7">PC 7</option>
+                    <option value="PC 8">PC 8</option>
+                    <option value="PC 9">PC 9</option>
+                    <option value="PC 10">PC 10</option>
+                </select>
+
+                <button type="submit" class="confirmar-reserva">Confirmar Reserva</button>
+            </form> <!-- Cierre del formulario -->
+            <p id="mensaje-reserva"></p> <!-- Mensaje de confirmación de reserva -->
+        </div> <!-- Cierre del contenedor del formulario -->
+    </section> <!-- Cierre de la sección de reservas -->
+
+    <script src="js/jquery.min.js"></script> <!-- Inclusión de jQuery para funcionalidades dinámicas -->
+    <script src="js/animacionreserva.js"></script> <!-- Inclusión del script para animaciones del formulario -->
+
+</body> <!-- Cierre del cuerpo de la página -->
+
+</html> <!-- Cierre del documento HTML -->

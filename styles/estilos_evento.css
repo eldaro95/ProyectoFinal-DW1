@@ -1,0 +1,405 @@
+/* Selector universal rellenos predeterminados */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye el borde del ancho y alto de los elementos */
+}
+
+/* Estilos generales del cuerpo del sitio */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal del texto */
+    font-size: 16px; /* Tamaño base del texto */
+    color: #011126; /* Color principal del texto */
+    background-color: #94cef2; /* Color de fondo del sitio */
+    line-height: 1.5; /* Espaciado entre líneas del texto */
+}
+
+/* Contenedor del header, para distribuir logo y menú) */
+header .contenedor {
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    overflow: hidden; /* Oculta desbordes si algún elemento se sale del contenedor */
+    display: flex; /* Activa Flexbox para organizar los elementos en fila */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+/* Área del logo */
+header .logo {
+    flex: 1 1 20%; /* Ocupa el 20% del ancho, y permite crecer o reducir */
+    height: 140px; /* Altura fija del área del logo */
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Área del menú de navegación */
+header .menu {
+    flex: 1 1 80%; /* Ocupa el 80% del ancho, también puede crecer o reducir */
+    height: 140px; /* Altura fija del área del menú */
+    background-color: #f2f2f2; /* Color de fondo igual al del logo */
+    display: flex; /* Activa flexbox para organizar los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra verticalmente los enlaces */
+    flex-wrap: wrap; /* Permite que los enlaces se acomoden en varias líneas si hay muchos */
+}
+
+/* Enlaces del menú de navegación */
+header .menu a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño del texto de los enlaces */
+    color: #011126; /* Color del texto */
+    margin: 10px 20px; /* Espacio entre los enlaces */
+    transition: color 0.3s; /* Transición suave al cambiar el color al pasar el cursor */
+}
+
+/* Efecto hover en los enlaces del menú */
+header .menu a:hover {
+    color: #e91e63; /* Cambia el color del enlace al pasar el mouse */
+}
+
+/* Contenedor del título y subtítulo en el header */
+header .encabezado {
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+/* Título principal del sitio */
+.titulo {
+    font-size: 70px; /* Tamaño grande para destacar el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #011126; /* Color del título */
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 45px; /* Tamaño menor que el título */
+    font-style: italic; /* Estilo en cursiva */
+    color: #011126; /* Color igual al del título */
+    margin-bottom: 20px; /* Añade espacio debajo del subtítulo */
+}
+
+/* Entrada (estructura de imagen + artículo al lado) */
+.entrada .contenedor {
+    display: flex; /* Flexbox para acomodar imagen y artículo lado a lado */
+    flex-wrap: wrap; /* Permite que se acomoden en columna en pantallas pequeñas */
+    justify-content: space-between; /* Deja espacio entre la imagen y el artículo */
+    padding: 20px; /* Espacio interior del contenedor */
+}
+
+h3 {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Contenedor de la imagen */
+.img_entrada {
+    width: 43%; /* Ocupa casi la mitad del contenedor */
+}
+
+/* Imagen dentro del contenedor */
+.img_entrada img {
+    margin-top: 150px; /* Da espacio superior a la imagen */
+    width: 100%; /* La imagen no se desborde y ocupe mi 100% del contenedor*/
+    height: auto; /* La altura se ajusta proporcionalmente */
+}
+
+/* Imagen de un gamer (posición absoluta) */
+.img_boy_gamer img {
+    width: 35%; /* La imagen ocupa un 35% del ancho del contenedor padre */
+    position: absolute; /* La imagen se posiciona de forma independiente del flujo normal */
+    right: 30px; /* La imagen se alinea al borde derecho con un margen */
+    top: 135px; /* Posición desde la parte superior */
+    height: 50%; /* Altura relativa al contenedor padre */
+}
+
+/* Imagen de PC gamer (también posicionada absolutamente) */
+.img_pc_gamer img {
+    width: 35%; /* Ocupa un 35% del ancho */
+    position: absolute; /* Se coloca fuera del flujo normal de la página */
+    left: 0px; /* Pegada al borde izquierdo */
+    top: 135px; /* Posición vertical */
+    height: 50%; /* Altura relativa */
+}
+
+/* Artículo al lado de la imagen */
+.entrada article {
+    margin-top: 100px; /* Se separa de la parte superior */
+    width: 48%; /* Ocupa casi la mitad del espacio disponible */
+    background: #fff; /* Fondo blanco para destacar el contenido */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título dentro del artículo */
+.entrada article h3 {
+    margin: 20px 0 10px; /* Espacio antes y después del título */
+    font-weight: 600; /* Negrita media para destacar */
+}
+
+/* Párrafos dentro del artículo */
+.entrada article p {
+    margin-bottom: 10px; /* Espacio debajo de cada párrafo */
+}
+
+/* Contenedor para inicio de sección de juegos */
+.iniciojuegos {
+    background-color: #fff; /* Fondo blanco */
+    margin-top: 53px; /* Espacio superior respecto al bloque anterior */
+}
+
+/* Texto dentro de la sección de juegos */
+.iniciojuegos .textojuegos {
+    font-size: 50px; /* Texto muy grande para destacar la sección */
+}
+
+/* Estilo para la sección de reserva */
+.galeria .foto {
+    width: 20%; /* Ocupa un quinto del ancho del contenedor padre */
+    float: right; /* Flota a la derecha del contenedor */
+}
+
+/* Características de la imagen dentro de la galería */
+.galeria .foto img {
+    width: 100%; /* Hace que la imagen se adapte al ancho del contenedor */
+    vertical-align: top; /* Alinea la imagen con la parte superior del contenedor */
+    /* Falta la propiedad opacity aquí si se quiere efecto visual previo al hover */
+}
+
+/* Efecto sobre las imagenes de mi galería */
+.galeria .foto img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+    -webkit-transition: all 0.35s ease; /* Suaviza el cambio en navegadores antiguos */
+    -o-transition: all 0.35s ease; /* Suaviza el cambio en Opera */
+    transition: all 0.35s ease; /* Suaviza el cambio en todos los navegadores */
+}
+
+
+/* Sección de reserva con imagen de fondo */
+.reserva-seccion {
+    background-image: url("../img/fondo-seccion.jpeg"); /* Aplica una imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen para que se vea equilibrada */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 40px 20px; /* Espacio interno alrededor del contenido */
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Contenedor del formulario */
+.contenedor-reserva {
+    max-width: 500px; /* Limita el ancho máximo para mantenerlo compacto */
+    background-color: white; /* Fondo blanco para destacar el formulario */
+    padding: 30px; /* Espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra ligera alrededor del formulario */
+    text-align: center; /* Centra el texto dentro */
+}
+
+/* Título dentro del formulario de reserva */
+.contenedor-reserva h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #011126; /* Color del texto */
+    font-size: 30px; /* Tamaño grande para el título */
+}
+
+/* Etiquetas del formulario */
+.contenedor-reserva label {
+    display: block; /* Cada etiqueta ocupa toda una línea */
+    margin-bottom: 10px; /* Espacio debajo del texto de la etiqueta */
+    color: #011126; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+/* Campos de texto y selección del formulario */
+.contenedor-reserva input,
+.contenedor-reserva select {
+    width: 100%; /* Ocupan todo el ancho del formulario */
+    padding: 12px; /* Espacio interior */
+    margin-bottom: 20px; /* Espacio entre cada campo */
+    border: 1px solid #011126; /* Borde oscuro para resaltar los campos */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto cómodo */
+}
+
+/* Botón para enviar el formulario */
+.confirmar-reserva {
+    padding: 12px 20px; /* Espacio interior del botón */
+    background-color: #011126; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Efecto de cambio de color al hacer hover */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+/* Estilos para el botón de reserva */
+.btn-reservar {
+    padding: 12px 20px; /* Espacio interior del botón */
+    background-color: #011126; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Efecto de cambio de color al hacer hover */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-top: 20px; /* Espacio por encima del botón */
+}
+
+.btn-reservar:hover {
+    background-color: #e91e63; /* Cambia a rosado al pasar el mouse */
+}
+
+
+/* Efecto hover del botón de reserva */
+.confirmar-reserva:hover {
+    background-color: #e91e63; /* Cambia a rosado al pasar el mouse */
+}
+
+/* Mensaje de confirmación de la reserva */
+#mensaje-reserva {
+    margin-top: 15px; /* Espacio por encima del mensaje */
+    color: #e91e63; /* Color rosado para que se note */
+}
+
+
+
+
+/*------------------------MEDIA QUERIES PARA DIFERENTES TAMAÑOS DE PANTALLA---------------------------------*/
+
+
+
+
+/* Para pantallas de tablets y algunas laptops pequeñas (hasta 1024px de ancho) */
+@media (max-width: 1024px) {
+    /*
+    En pantallas medianas, ajustamos la disposición para que sea más vertical
+    y los textos no se vean demasiado grandes.
+    */
+    .contenedor {
+        padding: 0 15px; /* Reducimos un poco el padding lateral del contenedor general */
+    }
+
+    header .contenedor {
+        flex-direction: column; /* Apilamos logo y menú */
+        align-items: center; /* Centramos logo y menú */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+
+    header .menu {
+        flex-direction: column; /* Apilamos los enlaces del menú */
+        align-items: center; /* Centramos los enlaces */
+    }
+
+    header .menu a {
+        margin: 5px 0; /* Reducimos el margen de los enlaces */
+        font-size: 16px; /* Tamaño de fuente un poco menor */
+    }
+
+    .titulo {
+        font-size: 40px; /* Título más pequeño */
+    }
+
+    .subtitulo {
+        font-size: 25px; /* Subtítulo más pequeño */
+    }
+
+    .entrada .contenedor {
+        flex-direction: column; /* Apilamos imagen y texto */
+        align-items: center; /* Centramos los elementos */
+        text-align: center; /* Centramos el texto */
+    }
+
+    .img_entrada {
+        width: 80%; /* La imagen ocupa más ancho */
+        margin-bottom: 20px; /* Espacio inferior */
+    }
+
+    .entrada article {
+        width: 80%; /* El texto ocupa más ancho */
+    }
+
+    .img_boy_gamer img,
+    .img_pc_gamer img {
+        display: none; /* Ocultamos las imágenes decorativas en pantallas medianas */
+    }
+
+    .galeria {
+        justify-content: center; /* Centramos las imágenes de la galería */
+    }
+
+    .galeria .foto {
+        width: calc(33.33% - 10px); /* Tres fotos por línea */
+    }
+
+    .contenedor-reserva {
+        max-width: 80%; /* El formulario ocupa más ancho */
+    }
+
+    .contenedor-reserva h2 {
+        font-size: 24px; /* Título del formulario más pequeño */
+    }
+
+    .contenedor-reserva label,
+    .contenedor-reserva input,
+    .contenedor-reserva select,
+    .contenedor-reserva button {
+        font-size: 14px; /* Tamaño de fuente más pequeño en el formulario */
+    }
+}
+
+/* Para pantallas de celulares (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    /*
+    Estilos específicos para celulares. Hacemos los elementos ocupar casi todo el ancho
+    y reducimos aún más los tamaños de texto si es necesario.
+    */
+    .titulo {
+        font-size: 30px; /* Título aún más pequeño */
+    }
+
+    .subtitulo {
+        font-size: 20px; /* Subtítulo aún más pequeño */
+    }
+
+    .img_entrada {
+        width: 95%; /* Imagen casi a todo el ancho */
+    }
+
+    .entrada article {
+        width: 95%; /* Texto casi a todo el ancho */
+    }
+
+    .iniciojuegos .textojuegos {
+        font-size: 20px; /* Texto de la sección de juegos más pequeño */
+    }
+
+    .galeria .foto {
+        width: calc(50% - 5px); /* Dos fotos por línea */
+    }
+
+    .contenedor-reserva {
+        max-width: 95%; /* Formulario casi a todo el ancho */
+    }
+}
+
+/* Para celulares más pequeños (hasta 480px de ancho) */
+@media (max-width: 480px) {
+    /*
+    Ajustes para celulares con pantallas muy angostas.
+    Podríamos hacer que la galería muestre una sola foto por línea si es necesario.
+    */
+    .galeria .foto {
+        width: 50%; /* Una foto por línea en celulares muy pequeños */
+        margin-bottom: 10px; /* Espacio entre fotos apiladas */
+    }
+}

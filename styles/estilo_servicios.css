@@ -1,0 +1,208 @@
+/* Selector universal para reiniciar estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y border no agranden el elemento */
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #B6E1F2; /* Color de fondo */
+  line-height: 1.5;  /* Espaciado entre líneas */
+}
+
+/* Encabezado de bienvenida */
+header .bienvenida {
+  text-align: center;
+  padding: 10px;
+  background-color: #011126;
+  color: white;
+}
+
+/* Contenedor general del encabezado */
+header .contenedor {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  background-image: url('../img/nav.png'); /* Imagen de fondo */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija la imagen al fondo */
+  border-radius: 15px ; /* Bordes redondeados */
+  margin: 10px 10px 10px 10px; /* Margen alrededor del contenedor */
+  border: 1px solid black; /*Borde negro*/
+}
+
+/* Contenedor del logo */
+header .logo {
+  flex: 1 1 20%; /* Ocupa el 20% del ancho del contenedor*/
+  height: 140px; 
+  display: flex;  /* Uso de distribucion flex*/
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Menú de navegación */
+header .menu {
+  flex: 1 1 80%;  /* Ocupa el 80% del ancho del contenedor*/
+  height: 140px; 
+  display: flex;  
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+/* Enlaces del menú */
+header .menu a {
+  text-decoration: none; 
+  font-size: 18px;
+  color: #011126;
+  margin: 10px 20px;
+  background-color:#0077cc;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Efecto al pasar el cursor por los enlaces del menú */
+header .menu a:hover {
+  color: #B6E1F2;
+  background-color: #0D0D0D;
+}
+
+/* Encabezado con título y subtítulo */
+header .titulo_header {
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #011126;;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 24px;
+  font-style: italic;
+  color: #011126;
+}
+
+/*Estilos para la sección main*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px 25px 0px 25px;
+  }
+
+.formulario-imagen {
+    flex: 0 0 50%; /* No crece, no encoge, base 40% */
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.formulario-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen manteniendo relación de aspecto */
+  display: block;
+}
+.cita-formulario {
+    flex: 0 0 50%; /* No crece, no encoge, base 60% */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    padding: 40px; 
+  }
+
+.cita-formulario label {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-weight: bold;
+  }
+  
+.cita-formulario input,
+.cita-formulario select,
+.cita-formulario textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+.cita-formulario button {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+  
+.cita-formulario button:hover {
+    background-color: #005fa3;
+  }
+  
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #eaeaea;
+    margin-top: 20px;
+  }
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+textarea {
+    resize: none;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 800px) {
+    .titulo {
+        font-size: 30px;
+        text-align: center;
+    }
+    .subtitulo {
+        font-size: 15px;
+        text-align: center;
+    }
+    header .contenedor {
+        flex-direction: column;
+    }
+    header .logo,
+    header .menu {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 25px;
+      align-items: center;
+      justify-content: center;
+      }
+      .formulario-imagen {
+        justify-content: center;
+        align-items: center;
+      }
+    .cita-formulario {
+      width: 100%; /* Ocupará todo el ancho disponible */
+      max-width: 600px; /* Opcional: límite máximo de ancho */
+      margin: 0 auto; /* Centrar el formulario si no ocupa el 100% */
+      }
+}

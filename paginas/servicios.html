@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Servicio Técnico</title>
+  <link rel="stylesheet" href="../styles/estilo_servicios.css" />
+  <script type="module" src="../scripts/servicios.js"></script>
+</head>
+<body>
+<!-- Encabezado de la página -->
+<header>
+  <div class="bienvenida">
+    <p>Dirección: Av. Galo Plaza Lasso y Jaime Roldós</p>
+    <p>Horario: Lunes a Viernes de 09:00 a 18:00</p>
+  </div>
+  <!-- Contenedor principal del encabezado -->
+  <div class="contenedor">
+      <!-- Contenedor del logo -->
+      <div class="logo">
+          <img src="../img/logo.png" alt="logo" width="140" height="140">
+      </div>
+      <!-- Contenedor del menú de navegación -->
+      <nav class="menu">
+          <a href="../index.html" id="home">Home</a>
+          <a href="../ProyectoFinal-DW1/paginas/evento.html" id="evento">Noche Blue</a>
+          <a href="../ProyectoFinal-DW1/paginas/catalogo.html" id="catalogo">Catálogo</a>
+          <a href="../ProyectoFinal-DW1/paginas/servicios.html" id="servicio-tecnico">Servicio Técnico</a>
+      </nav>
+  </div>
+
+  <!-- Encabezado con título y subtítulo -->
+  <div class="titulo_header">
+      <h1 class="titulo">Agendamiento de Servicio Técnico</h1>
+      <h2 class="subtitulo">Con la garantía de Blue Zone</h2>
+  </div>
+</header>
+
+
+  <main>
+    <div class="formulario-imagen">
+      <img src="../img/tecnico.jpg" alt="Técnico reparando computadora">
+    </div>
+
+    <form class="cita-formulario">
+      <label for="producto">Tipo de dispositivo:</label>
+      
+      <select id="producto" name="producto">
+        <option value="">-- Selecciona --</option>
+        <option value="laptop">Laptop</option>
+        <option value="pc">Computadora de escritorio</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="problema">Describe el problema:</label>
+      <textarea id="problema" name="problema" rows="4" placeholder="Ej: No enciende, pantalla azul..."></textarea>
+
+      <label for="fecha">Fecha de la cita:</label>
+      <input type="date" id="fecha" name="fecha" />
+
+      <label for="hora">Hora preferida:</label>
+      <input type="time" id="hora" name="hora" />
+
+      <label for="direccion_manual">Dirección exacta:</label>
+      <input type="text" id="direccion_manual" name="direccion_manual" placeholder="Ej: Av. Rio Amazonas N3O" />
+
+      <label for="direccion">Ubicación en mapa (opcional):</label>
+      <input type="text" id="direccion" name="direccion"/>
+
+      <label>Selecciona tu ubicación en el mapa:</label>
+      <div id="map"></div>
+      <input type="hidden" id="lat" name="lat">
+      <input type="hidden" id="lng" name="lng">
+
+      <button type="submit">Agendar Cita</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&COPY; Todos los derechos reservados Grp1 2025-2030</p>
+  </footer>
+  <script src="../scripts/servicios.js"></script>
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap&v=weekly&libraries=marker"
+  defer
+  ></script>
+
+</body>
+</html>

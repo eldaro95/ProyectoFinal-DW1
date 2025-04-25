@@ -15,56 +15,69 @@ body {
 }
 
 /* Contenedor del header, para distribuir logo y menú) */
+header .bienvenida {
+    text-align: center;
+    padding: 10px;
+    background-color: #011126;
+    color: white;
+}
+
+  /* Contenedor general del encabezado */
 header .contenedor {
-    width: 100%; /* El contenedor ocupa todo el ancho disponible */
-    overflow: hidden; /* Oculta desbordes si algún elemento se sale del contenedor */
-    display: flex; /* Activa Flexbox para organizar los elementos en fila */
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
-    align-items: center; /* Centra verticalmente los elementos hijos */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    background-image: url('../img/nav.png'); /* Imagen de fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    border-radius: 15px ; /* Bordes redondeados */
+    margin: 10px 10px 10px 10px; /* Margen alrededor del contenedor */
+    border: 1px solid black; /*Borde negro*/
 }
 
-/* Área del logo */
+  /* Contenedor del logo */
 header .logo {
-    flex: 1 1 20%; /* Ocupa el 20% del ancho, y permite crecer o reducir */
-    height: 140px; /* Altura fija del área del logo */
-    background-color: #f2f2f2; /* Color de fondo gris claro */
-    display: flex; /* Flexbox para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    flex: 1 1 20%; /* Ocupa el 20% del ancho del contenedor*/
+    height: 140px; 
+    display: flex;  /* Uso de distribucion flex*/
+    justify-content: center; 
+    align-items: center;
 }
 
-/* Área del menú de navegación */
+  /* Menú de navegación */
 header .menu {
-    flex: 1 1 80%; /* Ocupa el 80% del ancho, también puede crecer o reducir */
-    height: 140px; /* Altura fija del área del menú */
-    background-color: #f2f2f2; /* Color de fondo igual al del logo */
-    display: flex; /* Activa flexbox para organizar los enlaces */
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    align-items: center; /* Centra verticalmente los enlaces */
-    flex-wrap: wrap; /* Permite que los enlaces se acomoden en varias líneas si hay muchos */
+    flex: 1 1 80%;  /* Ocupa el 80% del ancho del contenedor*/
+    height: 140px; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
-/* Enlaces del menú de navegación */
+  /* Enlaces del menú */
 header .menu a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    font-size: 18px; /* Tamaño del texto de los enlaces */
-    color: #011126; /* Color del texto */
-    margin: 10px 20px; /* Espacio entre los enlaces */
-    transition: color 0.3s; /* Transición suave al cambiar el color al pasar el cursor */
+    text-decoration: none; 
+    font-size: 18px;
+    color: #011126;
+    margin: 10px 20px;
+    background-color:#0077cc;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Efecto hover en los enlaces del menú */
+  /* Efecto al pasar el cursor por los enlaces del menú */
 header .menu a:hover {
-    color: #e91e63; /* Cambia el color del enlace al pasar el mouse */
+    color: #B6E1F2;
+    background-color: #0D0D0D;
 }
 
-/* Contenedor del título y subtítulo en el header */
-header .encabezado {
-    flex-direction: column; /* Organiza el contenido verticalmente */
-    padding: 20px; /* Espaciado interior */
-    text-align: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra los elementos hijos horizontalmente */
+  /* Encabezado con título y subtítulo */
+header .titulo_header {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
 }
+
 
 /* Título principal del sitio */
 .titulo {

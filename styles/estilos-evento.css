@@ -123,7 +123,7 @@ h3 {
     width: 35%; /* La imagen ocupa un 35% del ancho del contenedor padre */
     position: absolute; /* La imagen se posiciona de forma independiente del flujo normal */
     right: 30px; /* La imagen se alinea al borde derecho con un margen */
-    top: 135px; /* Posición desde la parte superior */
+    top: 180px; /* Posición desde la parte superior */
     height: 50%; /* Altura relativa al contenedor padre */
 }
 
@@ -132,7 +132,7 @@ h3 {
     width: 35%; /* Ocupa un 35% del ancho */
     position: absolute; /* Se coloca fuera del flujo normal de la página */
     left: 0px; /* Pegada al borde izquierdo */
-    top: 135px; /* Posición vertical */
+    top: 180px; /* Posición vertical */
     height: 50%; /* Altura relativa */
 }
 

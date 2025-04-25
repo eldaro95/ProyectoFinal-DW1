@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lngVal = document.getElementById("lng").value;
     // Validar que todos los campos estén completos
     if (!producto || !problema || !fecha || !hora || !direccion || !latVal || !lngVal) {
-      alert("Por favor completa todos los campos y selecciona una ubicación en el mapa.");
+      alert("Por favor completa todos los datos.");
       return;
     }
     // Crear un objeto con los datos del formulario

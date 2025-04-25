@@ -88,10 +88,10 @@ header .titulo_header {
 
 /* Subtítulo */
 .subtitulo {
-    font-size: 45px; /* Tamaño menor que el título */
+    font-size: 24px; /* Tamaño menor que el título */
     font-style: italic; /* Estilo en cursiva */
     color: #011126; /* Color igual al del título */
-    margin-bottom: 20px; /* Añade espacio debajo del subtítulo */
+    margin-bottom: 30px;
 }
 
 /* Entrada (estructura de imagen + artículo al lado) */

@@ -33,29 +33,29 @@ header .bienvenida {
     border-radius: 15px ; /* Bordes redondeados */
     margin: 10px 10px 10px 10px; /* Margen alrededor del contenedor */
     border: 1px solid black; /*Borde negro*/
-  }
-  
+}
+
   /* Contenedor del logo */
-  header .logo {
+header .logo {
     flex: 1 1 20%; /* Ocupa el 20% del ancho del contenedor*/
     height: 140px; 
     display: flex;  /* Uso de distribucion flex*/
     justify-content: center; 
     align-items: center;
-  }
-  
+}
+
   /* Menú de navegación */
-  header .menu {
+header .menu {
     flex: 1 1 80%;  /* Ocupa el 80% del ancho del contenedor*/
     height: 140px; 
     display: flex;  
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap; 
-  }
-  
+}
+
   /* Enlaces del menú */
-  header .menu a {
+header .menu a {
     text-decoration: none; 
     font-size: 18px;
     color: #011126;
@@ -63,20 +63,20 @@ header .bienvenida {
     background-color:#0077cc;
     padding: 10px 20px;
     border-radius: 5px;
-  }
-  
+}
+
   /* Efecto al pasar el cursor por los enlaces del menú */
-  header .menu a:hover {
+header .menu a:hover {
     color: #B6E1F2;
     background-color: #0D0D0D;
-  }
-  
+}
+
   /* Encabezado con título y subtítulo */
-  header .titulo_header {
+header .titulo_header {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-  }
+}
 
 /*Diseño contenido título*/
 header .titulo {
@@ -88,6 +88,7 @@ header .titulo {
 /*Diseño contenido subtítulo*/
 header .subtitulo {
     font-size: 24px;
+    font-style: italic;
     color: #011126;
     padding: 5px;
 }
